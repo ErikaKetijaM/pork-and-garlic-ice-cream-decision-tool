@@ -1,0 +1,14 @@
+UPLOAD THESE FILES TO GITHUB
+
+Select every file in this folder when updating your GitHub repository.
+
+Required website files:
+1. index.html - main Decision Tool page
+2. styles.css - design and colours
+3. app.js - calculator logic
+4. statements.js - Profit and Loss and Cash Flow logic
+5. profit-loss.html - Profit and Loss page
+6. cash-flow.html - Cash Flow page
+7. README.md - simple project instructions
+
+On GitHub, upload these files to the existing repository and choose "Replace" if GitHub says a file already exists. Then click "Commit changes". Vercel will update automatically.
