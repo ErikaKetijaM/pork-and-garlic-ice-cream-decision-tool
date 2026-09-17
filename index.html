@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Year 2 Winter decision tool for Pork and Garlic Ice Cream Co." />
+  <title>Winter Decision Studio | Pork and Garlic Ice Cream Co.</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23501430'/%3E%3Ccircle cx='32' cy='25' r='15' fill='%23f58b9d'/%3E%3Cpath d='M20 36h24L32 56z' fill='%23f4bd72'/%3E%3Cpath d='M25 39l14 12M39 39L25 51' stroke='%23b67245' stroke-width='2'/%3E%3Ccircle cx='26' cy='20' r='3' fill='%23fff0c8'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css?v=20260917-boutique" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark" role="img" aria-label="Ice cream cone"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="25" r="15" fill="#f58b9d"/><circle cx="26" cy="20" r="3" fill="#fff0c8"/><path d="M20 36h24L32 56z" fill="#f4bd72"/><path d="M25 39l14 12M39 39L25 51" fill="none" stroke="#b67245" stroke-width="2"/></svg></span><div><strong>Pork and Garlic Ice Cream Co.</strong><small>Winter decision studio</small></div></div>
+    <span class="save-state" id="saveState">Saved on this device</span>
+  </header>
+
+  <main class="shell">
+    <section class="intro" aria-labelledby="pageTitle">
+      <div><p class="eyebrow">YEAR 2 · WINTER</p><h1 id="pageTitle">Make a plan you can explain.</h1><p class="intro-copy">Start by checking one real Year 1 season. Then compare two Winter plans using the same financial rules.</p></div>
+      <ol class="steps" aria-label="Three step process"><li class="active"><span>1</span><b>Verify Year 1</b><small>Check the model</small></li><li><span>2</span><b>Compare plans</b><small>Test your choices</small></li><li><span>3</span><b>Choose</b><small>Record your decision</small></li></ol>
+    </section>
+
+    <details class="quick-guide" open>
+      <summary>Read this first: how to use the calculator</summary>
+      <div class="guide-grid">
+        <p><b>1. Check Winter first.</b> The Year 1 Winter section is the same calculation you made in class. It should show Sh4,171 profit and Sh73,546 closing cash. Use “Restore supplied Winter example” if you need to start again.</p>
+        <p><b>2. Then enter your real Year 1 ending position.</b> Add your actual cash, machines, loans, and unused tax losses after Year 1 Autumn.</p>
+        <p><b>3. Choose real premises and machines.</b> Selecting a premise automatically adds its rent, machine slots, and transport. Selecting a machine uses its real capacity, maintenance, depreciation, and purchase cost.</p>
+        <p><b>4. Remember: request is not revenue.</b> Revenue comes only from ice cream actually allocated and sold. Unsold ice cream spoils. Profit and cash are different, so always check both.</p>
+      </div>
+    </details>
+
+    <section class="panel validation" id="year1" aria-labelledby="year1Title">
+      <div class="section-heading"><div><p class="eyebrow">STEP 1</p><h2 id="year1Title">Year 1 Winter: already checked</h2><p>This is proof that the calculator matches your Winter profit-and-loss statement and cash-flow statement. You do not need to enter or change anything here.</p></div></div>
+      <div class="simple-validation"><div><span class="check-mark">✓</span><h3>The supplied Winter example matches the spreadsheet.</h3><p>These are the confirmed results from your first class calculation.</p></div><div class="key-results light"><div><small>Net profit</small><strong>Sh4,171</strong></div><div><small>Closing cash</small><strong>Sh73,546</strong></div></div></div>
+      <details class="calculation-details"><summary>Record Spring, Summer, and Autumn</summary><p class="helper">Winter is fixed above. Choose the next season, enter your team’s real decisions and actual sales, then save it. Opening cash is automatically brought forward from the previous season’s closing cash.</p><label class="select-label">Season to record <select id="seasonSelect"><option>Spring</option><option>Summer</option><option>Autumn</option></select></label><div class="key-results season-results"><div><small>Calculated net profit</small><strong id="seasonProfit">—</strong></div><div><small>Calculated closing cash</small><strong id="seasonCash">—</strong></div></div><h3 class="season-message" id="validationMessage">Enter your Spring decisions.</h3><div class="field-grid" id="validationInputs"></div><div class="calculation-strip" id="validationBreakdown"></div><button type="button" class="secondary save-button" id="saveSeason">Save this season</button><div class="progress-line" id="year1Progress"></div></details>
+    </section>
+
+    <section class="panel starting-position" aria-labelledby="positionTitle">
+      <div class="section-heading"><div><p class="eyebrow">YOUR STARTING POINT</p><h2 id="positionTitle">End of Year 1 record</h2><p>Enter your team’s actual position after Autumn. This becomes the opening point for both Winter options.</p></div></div>
+      <div class="field-grid position-grid" id="positionInputs"></div>
+    </section>
+
+    <section class="strategy-section" id="year2" aria-labelledby="strategyTitle">
+      <div class="section-heading on-dark"><div><p class="eyebrow">STEP 2</p><h2 id="strategyTitle">Compare your Winter choices</h2><p>All Year 2 values are editable estimates until your instructor gives the official rules.</p></div><div class="legend"><span class="dot editable"></span>editable estimate <span class="dot calculated"></span>calculated result</div></div>
+      <div class="scenario-grid" id="scenarioGrid"></div>
+    </section>
+
+    <section class="panel comparison" aria-labelledby="comparisonTitle">
+      <div class="section-heading"><div><p class="eyebrow">STEP 3</p><h2 id="comparisonTitle">See the difference clearly</h2><p>The comparison uses your current values. Change an input above to test another idea.</p></div></div>
+      <div class="comparison-summary" id="comparisonSummary"></div>
+      <div class="table-wrap"><table><thead><tr><th>What changes?</th><th>Winter A</th><th>Winter B</th><th>What it means</th></tr></thead><tbody id="comparisonTable"></tbody></table></div>
+    </section>
+
+    <section class="recommendation" aria-labelledby="recommendationTitle">
+      <div><p class="eyebrow">FINAL NOTE</p><h2 id="recommendationTitle">Record the team decision</h2><p>Choose an option, then write the short explanation your assignment asks for.</p></div>
+      <div class="recommendation-fields"><label>Recommended option<select id="recommended"><option value="A">Winter A</option><option value="B">Winter B</option></select></label><label>Our recommendation<textarea id="recommendationText" placeholder="Example: We recommend Winter A because it protects our cash while we wait for confirmed orders."></textarea></label><label>Main reason<textarea id="reasonText" placeholder="What financial difference matters most?"></textarea></label><label>Most important assumption<textarea id="assumptionText" placeholder="Example: We assume allocated sales will be at least … units."></textarea></label></div>
+    </section>
+  </main>
+  <footer>Designed for your team’s assignment · Keep your own GitHub and Vercel links in your own cells of the shared spreadsheet.</footer>
+  <script src="app.js?v=20260917-6"></script>
+</body>
+</html>
