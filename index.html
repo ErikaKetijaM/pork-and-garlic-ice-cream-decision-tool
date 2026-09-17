@@ -52,12 +52,18 @@
       <div class="table-wrap"><table><thead><tr><th>What changes?</th><th>Winter A</th><th>Winter B</th><th>What it means</th></tr></thead><tbody id="comparisonTable"></tbody></table></div>
     </section>
 
+    <section class="panel strategy-helper" aria-labelledby="helperTitle">
+      <div class="section-heading"><div><p class="eyebrow">STRATEGY HELPER</p><h2 id="helperTitle">What do the current numbers suggest?</h2><p>This is not external AI. It reads your own Winter A and Winter B calculations and explains the main trade-off in simple language.</p></div><button type="button" class="secondary" id="refreshAdvice">Refresh advice</button></div>
+      <div class="advice-output" id="strategyAdvice" aria-live="polite"></div>
+      <p class="helper">Use this as a discussion tool. Your team still chooses the final strategy and writes the reason in the decision section below.</p>
+    </section>
+
     <section class="recommendation" aria-labelledby="recommendationTitle">
       <div><p class="eyebrow">FINAL NOTE</p><h2 id="recommendationTitle">Record the team decision</h2><p>Choose an option, then write the short explanation your assignment asks for.</p></div>
       <div class="recommendation-fields"><label>Recommended option<select id="recommended"><option value="A">Winter A</option><option value="B">Winter B</option></select></label><label>Our recommendation<textarea id="recommendationText" placeholder="Example: We recommend Winter A because it protects our cash while we wait for confirmed orders."></textarea></label><label>Main reason<textarea id="reasonText" placeholder="What financial difference matters most?"></textarea></label><label>Most important assumption<textarea id="assumptionText" placeholder="Example: We assume allocated sales will be at least … units."></textarea></label></div>
     </section>
   </main>
   <footer>Designed for your team’s assignment · Keep your own GitHub and Vercel links in your own cells of the shared spreadsheet.</footer>
-  <script src="app.js?v=20260917-6"></script>
+  <script src="app.js?v=20260917-7"></script>
 </body>
 </html>
